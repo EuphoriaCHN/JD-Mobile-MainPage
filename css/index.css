@@ -12,7 +12,9 @@
     max-width: 640px;
     min-width: 320px;
     position: fixed;
-    background-color: #e92322;
+    /*background-color: #e92322;*/
+    background-color: transparent;
+    z-index: 999;
 }
 
 .jd-logo {
@@ -67,4 +69,55 @@
     background-size: 200px 200px;
     top: 6px;
     left: 81px;
+}
+
+.jd-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.jd-banner-img {
+    width: 800%;
+}
+
+.jd-banner-img > li {
+    width: 12.5%;
+    float: left;
+}
+
+.jd-banner-img > li img {
+    width: 100%;
+}
+
+.jd-banner-indicator {
+    position: absolute;
+    width: 128px;
+    height: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 5px;
+}
+
+.jd-banner-indicator > li {
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    float: left;
+    margin-left: 10px;
+}
+
+.jd-banner-indicator > li:first-child {
+    margin-left: 0;
+}
+
+.jd-banner-indicator > li.active {
+    background-color: #ffffff;
 }
