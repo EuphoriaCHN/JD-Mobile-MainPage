@@ -1,4 +1,4 @@
-html, body, ul, li, img, a, p {
+html, body, ul, li, img, a, p, form, input {
     padding: 0;
     margin: 0;
     -webkit-box-sizing: border-box;
