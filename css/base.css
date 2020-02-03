@@ -27,6 +27,10 @@ input {
     border: 1px solid #cccccc;
 }
 
+img {
+    vertical-align: bottom;
+}
+
 .f-left {
     float: left;
 }

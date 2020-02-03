@@ -4,6 +4,7 @@
     min-width: 320px;
     margin: 0 auto;
     height: 1000px;
+    background-color: #cccccc;
 }
 
 .jd-search {
@@ -120,4 +121,25 @@
 
 .jd-banner-indicator > li.active {
     background-color: #ffffff;
+}
+
+.jd-nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+
+.jd-nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.jd-nav li img {
+    width: 50px;
+}
+
+.jd-nav li p {
+    line-height: 25px;
 }
