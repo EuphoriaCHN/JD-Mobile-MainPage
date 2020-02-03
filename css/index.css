@@ -3,8 +3,8 @@
     max-width: 640px;
     min-width: 320px;
     margin: 0 auto;
-    height: 1000px;
-    background-color: #cccccc;
+    /*height: 1000px;*/
+    background-color: #eeeeee;
 }
 
 .jd-search {
@@ -142,4 +142,66 @@
 
 .jd-nav li p {
     line-height: 25px;
+}
+
+.jd-product {
+    width: 100%;
+}
+
+.jd-product-box {
+    width: 100%;
+    margin-top: 7px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 1px 1px 1px #cccccc;
+    -moz-box-shadow: 1px 1px 1px #cccccc;
+    box-shadow: 1px 1px 1px #cccccc;
+}
+
+.jd-product-box > .jd-pTip {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #eeeeee;
+    color: #666666;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jd-product-box > .jd-pTip > h3 {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+}
+
+.jd-product-box > .jd-pTip  > h3:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background-color: #e92322;
+    left: -8px;
+    top: 9px;
+}
+
+.jd-product-box > .jd-pContent a {
+    width: 50%;
+    display: block;
+}
+
+.jd-product-box > .jd-pContent img {
+    width: 100%;
+}
+
+.jd-product-box > .jd-pContent > .border-l {
+    border-left: 2px solid #eeeeee;
+}
+
+.jd-product-box > .jd-pContent > .border-r {
+    border-right: 2px solid #eeeeee;
+}
+
+.jd-product-box > .jd-pContent > .border-b {
+    border-bottom: 2px solid #eeeeee;
 }
