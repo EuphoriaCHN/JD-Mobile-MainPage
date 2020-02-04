@@ -102,7 +102,7 @@
 
 .jd-banner-indicator {
     position: absolute;
-    width: 128px;
+    /*width: 128px;*/
     height: 10px;
     left: 50%;
     -webkit-transform: translateX(-50%);

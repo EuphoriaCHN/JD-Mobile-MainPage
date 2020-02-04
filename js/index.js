@@ -119,6 +119,7 @@
             }
             indicator.appendChild(each);
         }
+        indicator.style.width = 6 + (bannerImages.children.length - 3) * 16 + 'px';
         let indicatorOldActive = indicator.children[0];
 
         function setIndicator(index) {
