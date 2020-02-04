@@ -157,6 +157,10 @@
                     bannerImages.style.transition = ''; // 取消行内过渡样式，采用设计好的 css 样式
                 }
 
+                if (nowImageIndex > bannerImages.children.length - 1) {
+                    nowImageIndex = bannerImages.children.length - 1;
+                }
+
                 bannerImages.style.left = -1 * nowOffsetLeft + 'px';
             }, 2000);
         }
@@ -168,12 +172,13 @@
         let beforeTouchLeft = 0; // 为记录总共移动距离做准备
 
         bannerImages.addEventListener('touchstart', function (ev) {
-            clearInterval(autoRotationTimer);
             let e = ev || window.event;
             startX = e.targetTouches[0].clientX;
+            clearInterval(autoRotationTimer);
 
             bannerImages.style.transition = 'none';
             beforeTouchLeft = parseInt(bannerImages.style.left);
+            setIndicator(nowImageIndex - 1);
         });
 
         bannerImages.addEventListener('touchmove', function (ev) {
@@ -219,6 +224,10 @@
             moveX = 0;
             distanceX = 0;
 
+            setTimeout(() => {
+                isEnd = true;
+            }, 500);
+
             startInterval(); // 松手之后重新开始轮播
         });
 
@@ -235,9 +244,6 @@
                 bannerImages.style.left = -1 * nowOffsetLeft + 'px'; // 偷偷移动到对应的图片
             }
             setIndicator(nowImageIndex - 1);
-            setTimeout(() => {
-                isEnd = true;
-            }, 300);
         });
     }
 
