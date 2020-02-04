@@ -205,3 +205,79 @@
 .jd-product-box > .jd-pContent > .border-b {
     border-bottom: 2px solid #eeeeee;
 }
+
+/* 设置京东秒杀块的样式标记 */
+.jd-sk {}
+
+.jd-sk > .jd-pTip {
+    border-bottom: none;
+    padding: 0;
+}
+
+.jd-sk > .jd-pTip .jd-sk-icon {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background: url("../images/seckill-icon.png") no-repeat;
+    -webkit-background-size: 16px 20px;
+    background-size: 16px 20px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.jd-sk > .jd-pTip .jd-sk-text {
+    color: #e92322;
+    margin-left: 8px;
+}
+
+.jd-sk > .jd-pTip .jd-sk-time {
+    margin-left: 8px;
+}
+
+.jd-sk-time > span {
+    display: inline-block;
+    width: 12px;
+    height: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+}
+
+.jd-sk-time > span:nth-child(3n) {
+    color: #000000;
+    background-color: transparent;
+    width: 4px;
+}
+
+.jd-sk .title-right {
+    margin-right: 10px;
+}
+
+.jd-sk .jd-pContent {
+    padding: 20px;
+}
+
+.jd-sk .jd-pContent > ul {
+    width: 100%;
+}
+
+.jd-sk .jd-pContent li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #cccccc;
+}
+
+.jd-sk .jd-pContent li:last-child {
+    border-right: none;
+}
+
+.jd-sk .jd-pContent li a {
+    margin: 0 auto;
+    padding-bottom: 3px;
+}
+
+.jd-sk .jd-pContent .sk-before {
+    text-decoration: line-through;
+}
