@@ -119,6 +119,13 @@
             }
             indicator.appendChild(each);
         }
+        let indicatorOldActive = indicator.children[0];
+
+        function setIndicator(index) {
+            indicatorOldActive.className = '';
+            indicator.children[index].className = 'active';
+            indicatorOldActive = indicator.children[index];
+        }
 
         bannerImages.style.opacity = '1'; // 将图片显示出来
         setBannerScrollTransition(); // 等 banner 加载好了，再去初始化 layout 的滚动背景渐变
@@ -227,9 +234,10 @@
                 nowOffsetLeft = nowImageIndex * offset;
                 bannerImages.style.left = -1 * nowOffsetLeft + 'px'; // 偷偷移动到对应的图片
             }
+            setIndicator(nowImageIndex - 1);
             setTimeout(() => {
                 isEnd = true;
-            }, 500);
+            }, 300);
         });
     }
 
