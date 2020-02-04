@@ -78,11 +78,21 @@
 }
 
 .jd-banner-img {
-    width: 800%;
+    /* 这里的总宽度应该由 JS 代码去动态地设置 */
+    /*width: 1000%;*/
+    position: relative;
+    /*left: -100%;*/ /* 为了手动轮播图，这个需要设置为行内样式 */
+    -webkit-transition: left .8s ease-in-out;
+    -moz-transition: left .8s ease-in-out;
+    -ms-transition: left .8s ease-in-out;
+    -o-transition: left .8s ease-in-out;
+    transition: left .8s ease-in-out;
+    opacity: 0; /* 防止闪动 */
 }
 
 .jd-banner-img > li {
-    width: 12.5%;
+    /* 这里的每个 li 的宽度应该由 JS 代码去动态地设置 */
+    /*width: 10%;*/
     float: left;
 }
 
