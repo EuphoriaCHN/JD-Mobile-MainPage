@@ -13,8 +13,7 @@
     max-width: 640px;
     min-width: 320px;
     position: fixed;
-    /*background-color: #e92322;*/
-    background-color: transparent;
+    background-color: rgba(233, 35, 34, 0);
     z-index: 999;
 }
 
