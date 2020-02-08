@@ -1,0 +1,143 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.ct-layout {
+    width: 100%;
+    height: 100%;
+}
+
+.ct-header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #cccccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.ct-header .ct-back,
+.ct-header .ct-menu {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 0;
+    padding: 13px;
+    background: url("../images/jd-sprites.png") -20px 0;
+    -webkit-background-size: 200px 200px;
+    background-size: 200px 200px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+
+.ct-header .ct-back {
+    top: 0;
+}
+
+.ct-header .ct-search {
+    width: 100%;
+    height: 100%;
+    padding: 0 60px;
+}
+
+.ct-header .ct-search input {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #666666;
+    padding-left: 5px;
+}
+
+.ct-header .ct-menu {
+    right: 0;
+    background-position: -60px 0;
+}
+
+.ct-content {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.ct-c-left {
+    width: 100px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.ct-c-left ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.ct-c-left li {
+    height: 50px;
+    width: 100%;
+}
+
+.ct-c-left li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #333333;
+    background-color: #eeeeee;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+.ct-c-left li.active a {
+    background-color: #ffffff;
+    border-right: none;
+    border-bottom: none;
+    color: #e92322;
+}
+
+.ct-c-right {
+    height: 100%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ct-c-right .ct-c-r-img {
+    width: 100%;
+    display: block;
+}
+
+.ct-c-r-img img {
+    width: 100%;
+}
+
+.ct-c-right h3 {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.ct-c-right .ct-c-hot {
+    width: 100%;
+    flex: 1;
+}
+
+.ct-c-right .ct-c-hot li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
